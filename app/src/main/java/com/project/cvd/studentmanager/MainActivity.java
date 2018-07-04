@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
 
         if("Sinan ist ne Hure"=="Sinan"){
 
+        }else{
+
         }
     }
 }
