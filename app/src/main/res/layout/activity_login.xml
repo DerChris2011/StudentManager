@@ -7,36 +7,37 @@
     tools:context=".Login">
 
     <FrameLayout
-        android:layout_width="421dp"
-        android:layout_height="539dp"
+        android:layout_width="851dp"
+        android:layout_height="1142dp"
         tools:layout_editor_absoluteX="-32dp"
         tools:layout_editor_absoluteY="-19dp">
 
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="1127dp"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/menue_hintergrundbild" />
     </FrameLayout>
 
     <LinearLayout
-        android:layout_width="534dp"
-        android:layout_height="605dp"
+        android:layout_width="828dp"
+        android:layout_height="1153dp"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp">
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="348dp"
-            android:layout_height="72dp"
-            app:srcCompat="@drawable/hshlplogo" />
+            android:layout_width="423dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/hshllogogruen1" />
 
         <View
             android:id="@+id/view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_width="813dp"
+            android:layout_height="1045dp" />
+
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
