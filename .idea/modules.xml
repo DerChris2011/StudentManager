@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/StudentManager.iml" filepath="$PROJECT_DIR$/StudentManager.iml" />
-      <module fileurl="file://C:\Users\Heero\Desktop\androidVNC-master\StudentManager\.idea\StudentManager.iml" filepath="C:\Users\Heero\Desktop\androidVNC-master\StudentManager\.idea\StudentManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StudentManager.iml" filepath="$PROJECT_DIR$/StudentManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../Heero/Desktop/androidVNC-master/StudentManager/.idea/StudentManager.iml" filepath="$PROJECT_DIR$/../../../../Heero/Desktop/androidVNC-master/StudentManager/.idea/StudentManager.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

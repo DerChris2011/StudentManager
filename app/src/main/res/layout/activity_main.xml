@@ -44,7 +44,9 @@
         android:id="@+id/ContentHolder"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -67,9 +69,9 @@
                 android:id="@+id/btnCreate"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:gravity="right"
                 android:background="@android:drawable/ic_menu_add"
                 android:elevation="0dp"
+                android:gravity="right"
                 android:onClick="CreateUser"
                 android:text="Create" />
 
