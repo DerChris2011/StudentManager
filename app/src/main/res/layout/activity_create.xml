@@ -35,8 +35,13 @@
 
         <View
             android:id="@+id/view"
-            android:layout_width="813dp"
-            android:layout_height="1045dp" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layoutDirection="inherit"
+            android:saveEnabled="false"
+            android:scaleX="10"
+            android:scaleY="10" />
 
     </LinearLayout>
 
