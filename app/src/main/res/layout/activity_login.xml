@@ -9,13 +9,13 @@
     <FrameLayout
         android:layout_width="851dp"
         android:layout_height="1142dp"
-        tools:layout_editor_absoluteX="-32dp"
-        tools:layout_editor_absoluteY="-19dp">
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="97dp">
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="wrap_content"
-            android:layout_height="1127dp"
+            android:layout_width="689dp"
+            android:layout_height="366dp"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/menue_hintergrundbild" />
     </FrameLayout>
