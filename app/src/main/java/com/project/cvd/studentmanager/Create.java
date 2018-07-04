@@ -7,8 +7,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.project.cvd.studentmanager.DatabaseRepos.DBHelper;
-
 public class Create extends AppCompatActivity {
 
     EditText Firstname;
