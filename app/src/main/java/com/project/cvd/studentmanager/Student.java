@@ -1,4 +1,4 @@
-package com.project.cvd.studentmanager.Models;
+package com.project.cvd.studentmanager;
 
 import com.orm.SugarRecord;
 
@@ -6,16 +6,15 @@ import com.orm.SugarRecord;
  * Created by Heero on 04.07.2018.
  */
 
-public class Student extends SugarRecord<Student> {
+public class Student{
+
+
+    int Id;
     String Firstname;
     String Lastname;
     String Email;
     String Address;
     String Phone;
-
-    public Student(){
-
-    }
 
     public Student(String firstname, String lastname, String email, String address, String phone){
         this.Firstname = firstname;
@@ -23,6 +22,14 @@ public class Student extends SugarRecord<Student> {
         this.Email = email;
         this.Address = address;
         this.Phone = phone;
+    }
+
+    public int getId() {
+        return Id;
+    }
+
+    public void setId(int id) {
+        Id = id;
     }
 
     public String getFirstname() {
@@ -63,5 +70,14 @@ public class Student extends SugarRecord<Student> {
 
     public void setPhone(String phone) {
         Phone = phone;
+    }
+
+    public String GetNames(){
+        return Firstname + " " + Lastname;
+    }
+
+    public int compareTo(Student student)
+    {
+        return Firstname.compareTo(student.Firstname);
     }
 }
