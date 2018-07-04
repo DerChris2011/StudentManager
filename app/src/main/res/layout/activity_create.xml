@@ -184,6 +184,28 @@
                 android:inputType="textPersonName"
                 android:text="Telefonnummer" />
         </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnHolder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAbbrechen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Abbrechen" />
+
+            <Button
+                android:id="@+id/btnSpeichern"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Speichern" />
+        </LinearLayout>
+
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
