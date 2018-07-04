@@ -45,11 +45,11 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (swSorting.isChecked()) {
                     switchState = true;
-                    swSorting.setText("Asc");
+                    swSorting.setText("ABC");
                 }
                 else {
                     switchState = false;
-                    swSorting.setText("Dsc");
+                    swSorting.setText("ZYX");
                 }
 
                 LoadList();
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         swSorting.setChecked(true);
-        swSorting.setText("Asc");
+        swSorting.setText("ABC");
         switchState=true;
 
         //Liste mit den Usern laden.
