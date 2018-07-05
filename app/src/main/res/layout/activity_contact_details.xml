@@ -6,15 +6,6 @@
     android:layout_height="match_parent"
     tools:context="com.project.cvd.studentmanager.ContactDetails">
 
-    <TextView
-        android:id="@+id/tbEmail2"
-        android:layout_width="125dp"
-        android:layout_height="35dp"
-        android:text="E-Mail Adresse:"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="288dp" />
-
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
@@ -23,60 +14,101 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
 
-    <TextView
-        android:id="@+id/accVornameNachname"
-        android:layout_width="209dp"
-        android:layout_height="40dp"
-        android:text="Vorname Nachname"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="118dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/accAdresse"
-        android:layout_width="215dp"
-        android:layout_height="95dp"
-        tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="180dp" />
+        <TextView
+            android:id="@+id/accVornameNachname"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="110dp"
+            android:text="Vorname Nachname"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="118dp" />
 
-    <TextView
-        android:id="@+id/accEmail"
-        android:layout_width="215dp"
-        android:layout_height="35dp"
-        tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="288dp" />
+        <LinearLayout
+            android:id="@+id/lylMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/tbTelefon2"
-        android:layout_width="134dp"
-        android:layout_height="35dp"
-        android:text="Telefonnummer:"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="343dp" />
+            <TextView
+                android:id="@+id/tbEmail2"
+                android:layout_width="125dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:text="E-Mail Adresse:"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="288dp" />
 
-    <TextView
-        android:id="@+id/accTelefon"
-        android:layout_width="215dp"
-        android:layout_height="35dp"
-        tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="343dp" />
+            <TextView
+                android:id="@+id/accEmail"
+                android:layout_width="215dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                tools:layout_editor_absoluteX="153dp"
+                tools:layout_editor_absoluteY="288dp" />
+        </LinearLayout>
 
-    <TextView
-        android:id="@+id/tbAdresse2"
-        android:layout_width="125dp"
-        android:layout_height="35dp"
-        android:text="Adresse:"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="180dp" />
+        <LinearLayout
+            android:id="@+id/lyladdress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="292dp"
-        android:layout_height="253dp"
-        app:srcCompat="@drawable/pic2"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="353dp" />
+            <TextView
+                android:id="@+id/tbAdresse2"
+                android:layout_width="125dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:text="Adresse:"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="180dp" />
+
+            <TextView
+                android:id="@+id/accAdresse"
+                android:layout_width="215dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                tools:layout_editor_absoluteX="153dp"
+                tools:layout_editor_absoluteY="180dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tbTelefon2"
+                android:layout_width="134dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:text="Telefonnummer:"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="343dp" />
+
+            <TextView
+                android:id="@+id/accTelefon"
+                android:layout_width="215dp"
+                android:layout_height="41dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                tools:layout_editor_absoluteX="153dp"
+                tools:layout_editor_absoluteY="343dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

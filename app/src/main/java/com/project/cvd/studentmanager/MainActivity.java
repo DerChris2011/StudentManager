@@ -4,26 +4,21 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.Switch;
+
+import com.project.cvd.studentmanager.Database.DBHelper;
+import com.project.cvd.studentmanager.Models.Student;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-
     List<Student> StudentsList = new ArrayList<>();
-
     UsersAdapter adapter;
-
     ListView lvlStudents;
-
-    ImageButton delButton;
-
     Switch swSorting;
-
     Boolean switchState;
 
     @Override
@@ -33,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         lvlStudents = findViewById(R.id.lvlStudents);
+
         swSorting = findViewById(R.id.swSorting);
         swSorting.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
                     switchState = false;
                     swSorting.setText("ZYX");
                 }
-
                 LoadList();
             }
         });
@@ -56,21 +51,12 @@ public class MainActivity extends AppCompatActivity {
 
         //Liste mit den Usern laden.
         LoadList();
-
-
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-
         //Liste mit den Usern nach Create neu laden.
-        LoadList();
-    }
-
-    private void DeleteItem(Student user){
-        DBHelper db = new DBHelper(this);
-        db.deleteContact(user.Id);
         LoadList();
     }
 
@@ -90,12 +76,13 @@ public class MainActivity extends AppCompatActivity {
         }
 
         adapter = new UsersAdapter(this, (ArrayList<Student>) StudentsList);
+        adapter.set_mainActivity(this);
         lvlStudents.setAdapter(adapter);
     }
 
     public void deleteUser(Student user){
         DBHelper db = new DBHelper(this);
-        db.deleteContact(user.Id);
+        db.deleteContact(user.getId());
     }
 
     public void CreateUser(View view) {
@@ -127,10 +114,8 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         }
-
         StudentsList.clear();
         StudentsList = BubbleList;
-
     }
 
     private void BubbleSortDescending(){
@@ -151,10 +136,14 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         }
-
         StudentsList.clear();
         StudentsList = BubbleList;
+    }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        startActivity(new Intent(this, Home.class));
     }
 }
 

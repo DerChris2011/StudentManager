@@ -1,11 +1,13 @@
 package com.project.cvd.studentmanager;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.project.cvd.studentmanager.Database.DBHelper;
 
 public class Create extends AppCompatActivity {
 
@@ -23,7 +25,6 @@ public class Create extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_create);
-
 
         Firstname = findViewById(R.id.edVorname);
         Lastname = findViewById(R.id.edNachname);
